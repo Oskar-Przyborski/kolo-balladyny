@@ -20,5 +20,47 @@
             "ŚMIERĆ",
             "BALLADYNY"
         ]
+    },
+    {
+        "kategoria": "Wydarzenie",
+        "slowaHasla": [
+            "BALLADYNA",
+            "ZASIADA",
+            "NA",
+            "TRONIE"
+        ]
+    },
+    {
+        "kategoria": "Pojęcie",
+        "slowaHasla": [
+            "KRWAWA",
+            "PLAMA",
+            "NA",
+            "CZOLE",
+            "BALLADYNY"
+        ]
+    },
+    {
+        "kategoria": "Bohater",
+        "slowaHasla": [
+            "SKIERKA",
+            "I",
+            "CHOCHLIK"
+        ]
+    },
+    {
+        "kategoria": "Wydarzenie",
+        "slowaHasla": [
+            "PUSTELNIK",
+            "RADZI",
+            "KIRKOROWI"
+        ]
+    },
+    {
+        "kategoria": "Miejsce",
+        "slowaHasla": [
+            "JEZIORO",
+            "GOPŁO"
+        ]
     }
 ]
