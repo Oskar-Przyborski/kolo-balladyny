@@ -7,7 +7,7 @@ import Keyboard from '../../components/Keyboard'
 import HasloInput from '../../components/HasloInput'
 import NextHasloBtn from '../../components/NextHasloBtn'
 import Questions from '../../data/pytania.json'
-export default function Quiz({ idx, kategoria, hasloWords }) {
+export default function Quiz({ idx, kategoria, hasloWords, isLast }) {
     const [selectedLetter, setSelectedLetter] = useState(null)
     const [usedLetters, setUsedLetters] = useState([])
     const [shownLettersLeft, setShownLettersLeft] = useState()
@@ -57,7 +57,7 @@ export default function Quiz({ idx, kategoria, hasloWords }) {
                     <HasloInput OnSubmit={SprawdzHaslo} />
                 </> :
                 <div>
-                    <NextHasloBtn hasloIdx={parseInt(idx) + 1} />
+                    <NextHasloBtn hasloIdx={isLast ? -1 : parseInt(idx) + 1} />
                 </div>
             }
         </div>
@@ -78,12 +78,14 @@ export async function getStaticProps({ params }) {
     const pytanie = Questions[parseInt(params.idx) - 1]
     const kategoria = pytanie.kategoria
     const hasloWords = pytanie.slowaHasla
+    const isLast = parseInt(params.idx) === Questions.length
     return {
         props: {
             idx: params.idx,
             kategoria,
             hasloWords,
-            key: params.idx
+            key: params.idx,
+            isLast
         }
     }
 }
