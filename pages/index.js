@@ -10,6 +10,11 @@ export default function Home() {
       </Head>
       <h1>Koło Balladyny - Quiz o Balladynie</h1>
       <div className={styles.startBtn}><Link href="/quiz/1">Rozpocznij!</Link></div>
+      <p>
+        Autorzy:<br/>
+        Karol Kowalczewski<br/>
+        Oskar Przyborski
+      </p>
     </div>
   )
 }
