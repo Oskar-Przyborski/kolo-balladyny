@@ -31,7 +31,7 @@
         ]
     },
     {
-        "kategoria": "Pojęcie",
+        "kategoria": "Wydarzenie",
         "slowaHasla": [
             "KRWAWA",
             "PLAMA",
@@ -61,6 +61,14 @@
         "slowaHasla": [
             "JEZIORO",
             "GOPŁO"
+        ]
+    },
+    {
+        "kategoria": "Bohater",
+        "slowaHasla": [
+            "DOBRE",
+            "SERCE",
+            "ALINY"
         ]
     }
 ]
